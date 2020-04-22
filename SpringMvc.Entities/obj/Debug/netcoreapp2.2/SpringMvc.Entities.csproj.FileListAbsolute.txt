@@ -1,0 +1,43 @@
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.deps.json
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfo.cs
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\source\repos\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.deps.json
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfo.cs
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\Desktop\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.deps.json
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfo.cs
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\Desktop\SpringMvcApp - Copy\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csprojAssemblyReference.cache
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.deps.json
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csproj.CoreCompileInputs.cache
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfoInputs.cache
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfo.cs
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+F:\Jayanth\IIHT\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.deps.json
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\bin\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.AssemblyInfo.cs
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.dll
+C:\Users\hp\Desktop\MongoDB_connectivity_from_unit_test_class\MongoDB connectivity from unit test class\SpringMvcApp\SpringMvcApp\SpringMvc.Entities\obj\Debug\netcoreapp2.2\SpringMvc.Entities.pdb
