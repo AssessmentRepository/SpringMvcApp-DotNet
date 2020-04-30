@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,17 +28,11 @@ namespace SpringMvcApp
                Options.Connection = Configuration.GetSection("MongoConnection:Connection").Value;
                Options.DatabaseName = Configuration.GetSection("MongoConnection:DatabaseName").Value;
            });
-            //  services.AddTransient<IBaseRepository, BaseRepository>();
             services.AddScoped<IMongoUserDBContext, MongoUserDBContext>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAdminRepository, AdminRepository>();
 
-
-            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            //services.AddScoped<IMongoContext, MongoContext>();
-            //services.AddScoped<IUnitOfWork, UnitOfWork>();
-            //services.AddScoped<IProductRepository, ProductRepository>();
-
-    }
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

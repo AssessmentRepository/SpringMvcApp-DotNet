@@ -4,9 +4,7 @@ using Moq;
 using SpringMvc.BusinessLayer.Repository;
 using SpringMvc.Datalayer;
 using SpringMvc.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -19,7 +17,7 @@ namespace SpringMvc.Tests.TestCases
         private Mock<IMongoUserDBContext> _mockContext;
         private User _user;
         private readonly IList<User> _list;
-        // MongoSettings declaration
+        
         private Mock<IOptions<Mongosettings>> _mockOptions;
 
 
@@ -37,7 +35,7 @@ namespace SpringMvc.Tests.TestCases
             _mockCollection = new Mock<IMongoCollection<User>>();
             _mockCollection.Object.InsertOne(_user);
             _mockContext = new Mock<IMongoUserDBContext>();
-            //MongoSettings initialization
+           
             _mockOptions = new Mock<IOptions<Mongosettings>>();
             _list = new List<User>();
             _list.Add(_user);
@@ -51,12 +49,12 @@ namespace SpringMvc.Tests.TestCases
         [Fact]
         public async Task TestFor_PasswordAndConfirmPassword()
         {
-            //mocking
+           
             _mockCollection.Setup(op => op.InsertOneAsync(_user, null,
             default(CancellationToken))).Returns(Task.CompletedTask);
             _mockContext.Setup(c => c.GetCollection<User>(typeof(User).Name)).Returns(_mockCollection.Object);
 
-            //Craetion of new Db
+            
             _mockOptions.Setup(s => s.Value).Returns(settings);
             var context = new MongoUserDBContext(_mockOptions.Object);
             var userRepo = new UserRepository(context);

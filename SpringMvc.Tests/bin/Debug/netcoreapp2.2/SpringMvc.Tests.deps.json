@@ -1,13 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "f4e64c0f28086903e97687e39fd61c05358f2d9c"
+    "signature": "aa3f4eed354c8314c790dc3e97c64222f5672ac9"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "SpringMvc.Tests/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "MongoDB.Driver": "2.8.1",
           "Moq": "4.13.1",
@@ -77,6 +78,17 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
           "System.Threading": "4.3.0"
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
@@ -1447,6 +1459,7 @@
       },
       "SpringMvc.BusinessLayer/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "MongoDB.Driver": "2.8.1",
           "SpringMvc.Datalayer": "1.0.0",
           "SpringMvc.Entities": "1.0.0"
@@ -1457,6 +1470,7 @@
       },
       "SpringMvc.Datalayer/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
           "MongoDB.Driver": "2.8.1",
           "SpringMvc.Entities": "1.0.0"
@@ -1467,6 +1481,7 @@
       },
       "SpringMvc.Entities/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "MongoDB.Driver": "2.8.1"
         },
         "runtime": {
@@ -1508,6 +1523,13 @@
       "sha512": "sha512-17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "path": "microsoft.csharp/4.0.1",
       "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-65MrmXCziWaQFrI0UHkQbesrX5wTwf9XPjY5yFm/VkgJKFJ5gqvXRoXjIZcf2wLi5ZlwGz/oMYfyURVCWbM5iw==",
+      "path": "microsoft.extensions.configuration.abstractions/2.2.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
       "type": "package",

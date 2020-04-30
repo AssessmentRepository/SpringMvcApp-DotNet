@@ -7,8 +7,6 @@ using SpringMvc.Entities;
 using SpringMvc.Tests.Exceptions;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -20,7 +18,7 @@ namespace SpringMvc.Tests.TestCases
         private Mock<IMongoUserDBContext> _mockContext;
         private User _user;
         private readonly IList<User> _list;
-        // MongoSettings declaration
+    
         private Mock<IOptions<Mongosettings>> _mockOptions;
 
 
@@ -38,7 +36,7 @@ namespace SpringMvc.Tests.TestCases
             _mockCollection = new Mock<IMongoCollection<User>>();
             _mockCollection.Object.InsertOne(_user);
             _mockContext = new Mock<IMongoUserDBContext>();
-            //MongoSettings initialization
+         
             _mockOptions = new Mock<IOptions<Mongosettings>>();
             _list = new List<User>();
             _list.Add(_user);
@@ -63,9 +61,8 @@ namespace SpringMvc.Tests.TestCases
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task ExceptionTestFor_ValidRegistration()
+        public async Task ExceptionTestFor_ValidRegistration()
         {
-            //Craetion of new Db
             _mockOptions.Setup(s => s.Value).Returns(settings);
             var context = new MongoUserDBContext(_mockOptions.Object);
             var userRepo = new UserRepository(context);
@@ -73,14 +70,11 @@ namespace SpringMvc.Tests.TestCases
             //Act
             //Assert
           await Assert.ThrowsAsync<UserExistException>(async () => await userRepo.Create(_user));
-           
-
         }
 
         [Fact]
         public async Task ExceptionTestFor_UserNotFound()
         {
-            //Craetion of new Db
             _mockOptions.Setup(s => s.Value).Returns(settings);
             var context = new MongoUserDBContext(_mockOptions.Object);
             var userRepo = new UserRepository(context);
@@ -95,7 +89,7 @@ namespace SpringMvc.Tests.TestCases
         [Fact]
         public async Task ExceptionTestFor_ValidUserName_InvalidPassword()
         {
-            //Craetion of new Db
+          
             _mockOptions.Setup(s => s.Value).Returns(settings);
             var context = new MongoUserDBContext(_mockOptions.Object);
             var userRepo = new UserRepository(context); 
@@ -108,9 +102,9 @@ namespace SpringMvc.Tests.TestCases
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task ExceptionTestFor_InvalidUserName_validPassword()
+        public async Task ExceptionTestFor_InvalidUserName_validPassword()
         {
-            //Craetion of new Db
+            
             _mockOptions.Setup(s => s.Value).Returns(settings);
             var context = new MongoUserDBContext(_mockOptions.Object);
             var userRepo = new UserRepository(context);
@@ -119,7 +113,6 @@ namespace SpringMvc.Tests.TestCases
             var ex = await Assert.ThrowsAsync<InvalidCredentialsExceptions>(() => userRepo.SignIn(_user.UserName, _user.Password));
             Assert.Equal("Please enter valid usename & password", ex.Messages);
         }
-
 
     }
 }

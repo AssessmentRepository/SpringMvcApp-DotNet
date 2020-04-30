@@ -1,13 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "7d7b5f4940bad61b3064a9f0fbb91bf8cc0f8988"
+    "signature": "17b753f952b8eccaadae17e04e45fe1ade78986c"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "SpringMvc.Datalayer/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
           "MongoDB.Driver": "2.8.1",
           "SpringMvc.Entities": "1.0.0"
@@ -24,6 +25,17 @@
           "lib/netstandard2.0/DnsClient.dll": {
             "assemblyVersion": "1.2.0.0",
             "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
           }
         }
       },
@@ -975,6 +987,7 @@
       },
       "SpringMvc.Entities/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "MongoDB.Driver": "2.8.1"
         },
         "runtime": {
@@ -995,6 +1008,13 @@
       "sha512": "sha512-P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "path": "dnsclient/1.2.0",
       "hashPath": "dnsclient.1.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-65MrmXCziWaQFrI0UHkQbesrX5wTwf9XPjY5yFm/VkgJKFJ5gqvXRoXjIZcf2wLi5ZlwGz/oMYfyURVCWbM5iw==",
+      "path": "microsoft.extensions.configuration.abstractions/2.2.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
       "type": "package",

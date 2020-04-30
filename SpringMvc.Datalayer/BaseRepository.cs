@@ -18,48 +18,36 @@ namespace SpringMvc.Datalayer
             _dbCollection = _mongoContext.GetCollection<TEntity>(typeof(TEntity).Name);
         }
 
-        void IBaseRepository<TEntity>.Create(TEntity obj)
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task Create(TEntity obj)
         {
-           
-                throw new NotImplementedException();
-    
-           
+            throw new NotImplementedException();
         }
 
-        public void Delete(string id)
+        public Task Delete(string id)
         {
             throw new NotImplementedException();
-
         }
-        //public virtual void Update(TEntity obj)
-        //{
-        //    _dbCollection.ReplaceOneAsync(Builders<TEntity>.Filter.Eq("_id", obj.GetId()), obj);
-        //}
 
         public async Task<TEntity> Get(string id)
         {
-            //ex. 5dc1039a1521eaa36835e541
             throw new NotImplementedException();
-
         }
 
         public async Task<IEnumerable<TEntity>> Get()
         {
-            var all = await _dbCollection.FindAsync(Builders<TEntity>.Filter.Empty,null);
+            var all = await _dbCollection.FindAsync(Builders<TEntity>.Filter.Empty, null);
             return await all.ToListAsync();
         }
 
-        public void Update(TEntity obj)
+      
+
+        public Task<TEntity> SignIn(string username, string Password)
         {
             throw new NotImplementedException();
         }
 
-        public Task<TEntity> SignIn(string username, string Password)
+        public Task Update(TEntity obj)
         {
             throw new NotImplementedException();
         }

@@ -3,9 +3,6 @@ using MongoDB.Driver;
 using Moq;
 using SpringMvc.Datalayer;
 using SpringMvc.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace SpringMvc.Tests.TestCases

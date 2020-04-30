@@ -75,6 +75,18 @@
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
         "type": "package",
         "compile": {
@@ -2189,6 +2201,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "MongoDB.Driver": "2.8.1",
           "SpringMvc.Datalayer": "1.0.0",
           "SpringMvc.Entities": "1.0.0"
@@ -2204,6 +2217,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
           "MongoDB.Driver": "2.8.1",
           "SpringMvc.Entities": "1.0.0"
@@ -2219,6 +2233,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "MongoDB.Driver": "2.8.1"
         },
         "compile": {
@@ -2367,6 +2382,19 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+      "sha512": "65MrmXCziWaQFrI0UHkQbesrX5wTwf9XPjY5yFm/VkgJKFJ5gqvXRoXjIZcf2wLi5ZlwGz/oMYfyURVCWbM5iw==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
@@ -7281,6 +7309,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Microsoft.Extensions.Configuration.Abstractions >= 2.2.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "MongoDB.Driver >= 2.8.1",
@@ -7299,11 +7328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.Tests\\SpringMvc.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.Tests\\SpringMvc.Tests.csproj",
       "projectName": "SpringMvc.Tests",
-      "projectPath": "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.Tests\\SpringMvc.Tests.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.Tests\\SpringMvc.Tests.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.Tests\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7322,14 +7351,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.BusinessLayer\\SpringMvc.BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.BusinessLayer\\SpringMvc.BusinessLayer.csproj"
+            "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.BusinessLayer\\SpringMvc.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.BusinessLayer\\SpringMvc.BusinessLayer.csproj"
             },
-            "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.Datalayer\\SpringMvc.Datalayer.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.Datalayer\\SpringMvc.Datalayer.csproj"
+            "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.Datalayer\\SpringMvc.Datalayer.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.Datalayer\\SpringMvc.Datalayer.csproj"
             },
-            "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.Entities\\SpringMvc.Entities.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MongoDB_connectivity_from_unit_test_class\\MongoDB connectivity from unit test class\\SpringMvcApp\\SpringMvcApp\\SpringMvc.Entities\\SpringMvc.Entities.csproj"
+            "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.Entities\\SpringMvc.Entities.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\New folder\\MongoDb_UserRegistration\\MongoDb_UserRegistration\\MongoDb_SpringMvcUserRegister\\SpringMvcApp\\SpringMvc.Entities\\SpringMvc.Entities.csproj"
             }
           }
         }
@@ -7343,6 +7372,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.5.0, )"

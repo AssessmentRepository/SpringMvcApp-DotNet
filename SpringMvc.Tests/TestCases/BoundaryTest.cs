@@ -1,13 +1,10 @@
 ﻿using Microsoft.Extensions.Options;
-using MongoDB.Bson;
 using MongoDB.Driver;
 using Moq;
 using SpringMvc.BusinessLayer.Repository;
 using SpringMvc.Datalayer;
 using SpringMvc.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,7 +18,6 @@ namespace SpringMvc.Tests.TestCases
         private Mock<IMongoUserDBContext> _mockContext;
         private User _user;
         private readonly IList<User> _list;
-        // MongoSettings declaration
         private Mock<IOptions<Mongosettings>> _mockOptions;
         
 
@@ -39,7 +35,7 @@ namespace SpringMvc.Tests.TestCases
             _mockCollection = new Mock<IMongoCollection<User>>();
             _mockCollection.Object.InsertOne(_user);
             _mockContext = new Mock<IMongoUserDBContext>();
-            //MongoSettings initialization
+    
             _mockOptions = new Mock<IOptions<Mongosettings>>();
             _list = new List<User>();
             _list.Add(_user);
@@ -70,11 +66,13 @@ namespace SpringMvc.Tests.TestCases
             var result = await userRepo.Get(_user.Id);
 
             ////Action
-          //  var getregisteredUser = await _userServices.GetUser(user.UserName);
+          
             bool CheckEmail = Regex.IsMatch(result.Email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
             bool isEmail = Regex.IsMatch(_user.Email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
 
             //Assert
+
+
             Assert.True(isEmail);
             Assert.True(CheckEmail);
         }

@@ -1,38 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SpringMvc.BusinessLayer.Repository;
 using SpringMvc.Entities;
 
 namespace SpringMvcApp.Controllers
 {
-// [Route("api/[controller]")]
+
     [ApiController]
     public class UsersController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
 
-        public UsersController(IUserRepository userRepository)
+        public UsersController(IUserRepository productRepository)
         {
-            _userRepository = userRepository;
+            _userRepository = productRepository;
         }
 
         [HttpGet]
-       [Route("api/user")]
-     // [Route("GetAll")]
+        [Route("api/user")]
         public async Task<ActionResult<IEnumerable<User>>> Get()
         {
-            //Do code here
-            return new List<User>();
+            var user = await _userRepository.Get();
+            return Ok(user);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> Get(string id)
         {
             //Do code here
+
             return new User();
         }
 
@@ -40,9 +38,36 @@ namespace SpringMvcApp.Controllers
         [Route("api/user/addValues")]
         public IActionResult Post(User model)
         {
-           //Do code here
-            return Ok("Your user has been added successfully");
+            try
+            {
+                if (string.IsNullOrWhiteSpace(model.UserName))
+                    return BadRequest("Please enter Name");
+                else if (string.IsNullOrWhiteSpace(model.Password))
+                    return BadRequest("Please enter Password");
+                else if (string.IsNullOrWhiteSpace(model.Email))
+                    return BadRequest("Please enter Email");
+
+                _userRepository.Create(model);
+
+                return Ok("Your product has been added successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
         }
 
+
+        [HttpPut("{id}")]
+        public void Put( [FromBody] User model)
+        {
+        }
+
+        // DELETE: api/ApiWithActions/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+
+        }
     }
 }

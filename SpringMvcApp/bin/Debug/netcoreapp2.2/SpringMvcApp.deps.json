@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
           "MongoDB.Driver": "2.8.1",
@@ -737,6 +738,7 @@
       },
       "SpringMvc.BusinessLayer/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "MongoDB.Driver": "2.8.1",
           "SpringMvc.Datalayer": "1.0.0",
           "SpringMvc.Entities": "1.0.0"
@@ -750,6 +752,7 @@
       },
       "SpringMvc.Datalayer/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
           "MongoDB.Driver": "2.8.1",
           "SpringMvc.Entities": "1.0.0"
@@ -763,6 +766,7 @@
       },
       "SpringMvc.Entities/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "MongoDB.Driver": "2.8.1"
         },
         "runtime": {
